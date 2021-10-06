@@ -26,7 +26,7 @@ public class AutomationPracticeWeb1 {
 
         //Verify that user can search an item using search box
         automation1.invokeBrowser(automation1.browserName);
-        automation1.searchItem("Dress");
+        automation1.searchItem("T-shirt");
         automation1.closeBrowser();
 
         //Verify that user can Navigate to Women's category
@@ -45,7 +45,7 @@ public class AutomationPracticeWeb1 {
     public void gotoWomenCategory() {
 
         driver.findElement(By.cssSelector("li a[title='Women']")).click();
-        waitForPageLoad(5l);
+        //waitForPageLoad(3l);
     }
 
     public void waitForPageLoad(Long second) {
