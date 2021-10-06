@@ -20,7 +20,6 @@ public class AutomationPracticeWeb1 {
     String password = "Vivek321";
     String browserName = "chrome";
 
-
     public static void main(String[] args) {
         AutomationPracticeWeb1 automation1 = new AutomationPracticeWeb1();
 
