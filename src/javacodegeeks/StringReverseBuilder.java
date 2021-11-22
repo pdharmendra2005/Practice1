@@ -12,5 +12,6 @@ public class StringReverseBuilder {
         String s = "Myname";
         String m = reverseString( s);
         System.out.println(m);
+       // String s1 = new StringBuilder("MyName");
     }
 }

@@ -1,36 +1,40 @@
 package javacodegeeks;
 
-public class PrivateSetter
-{
+public class PrivateSetterMain {
+
+    public static void main(String[] args) {
+        PrivateSetterMain privateSetterMain = new PrivateSetterMain();
+       // privateSetterMain.run();
+    }
+private static class SetterInside {
+
     private String name;
-    public void setName(String s)
-    {
+
+    public void setName(String s) {
         name = s;
     }
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
-    public PrivateSetter(String name)
-    {
+
+    public SetterInside(String name) {
         setName(name);
     }
 
 
-    public void run()
-    {
-        PrivateSetter newDog = new PrivateSetter("John");
+    public void run() {
+        SetterInside newDog = new SetterInside("John");
         nameThatDog(newDog);
         System.out.println(newDog.getName());
     }
 
 
-    public void nameThatDog(PrivateSetter dog)
-    {
+    public void nameThatDog(SetterInside dog) {
         dog.setName("Rutger");
     }
 
-    public static void main(String[] args) {
-       // PrivateSetter privateSetter = new PrivateSetter();
-    }
+
+}
+
 }
