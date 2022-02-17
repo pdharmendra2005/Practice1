@@ -57,24 +57,23 @@ public class JUnitRegressionTestSuite {
     }
     @Before
     public void waitForPageLoading(){
-        driver.manage().timeouts().pageLoadTimeout(8, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(3l, TimeUnit.SECONDS);
 
     }
 
     @Test
     public void createMember(){
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector(".login")).click();
         driver.findElement(By.cssSelector("#email_create")).sendKeys(eMail);
         driver.findElement(By.cssSelector("#SubmitCreate")).click();
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     //Goto sign in page enter valid email and click create member
     //Enter user details
     public void selectTitle(String title) {
         if (title.equalsIgnoreCase("Mr")) {
-            driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
             driver.findElement(By.cssSelector("#id_gender1")).click();
         }
         else {
