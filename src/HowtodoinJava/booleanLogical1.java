@@ -16,6 +16,7 @@ public class booleanLogical1 {
         if (result > 10 || result < 30) {
             //some operation
             System.out.println(result);
+            System.out.println("//////////////revert-4-test branch between modified like after review comment"+result);
         }
     }
 }
