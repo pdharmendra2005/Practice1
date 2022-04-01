@@ -96,7 +96,7 @@ public class RadioButtonSouthhall {
         RadioButtonSouthhall radioButtonSouthhall = new RadioButtonSouthhall();
 
         //staticDropSelect.InvokeBrowser("chrome");
-        radioButtonSouthhall.invokeBrowser("chrome");
+        radioButtonSouthhall.invokeBrowser("firefox");
         //staticDropSelect.selectCurrency(currencyChoice);
         radioButtonSouthhall.selectClass("W");
         radioButtonSouthhall.selectAirline(chooseAirline);
