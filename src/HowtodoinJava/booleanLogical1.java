@@ -20,8 +20,8 @@ public class booleanLogical1 {
 
         if (result > 10 && result < 30) {
             //some operation
-            System.out.println("////////////// another if   "+result);
-        }else if (result > 3000 || result < 50 ){
+            System.out.println("////////////// another if   " + result);
+        } else if (result > 3000 || result < 50) {
 
             System.out.println("result else if........."+ result);
         }else {
